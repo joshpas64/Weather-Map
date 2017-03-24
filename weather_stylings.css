@@ -1,0 +1,405 @@
+/* navbar fixed and collapsed settings */
+
+.navbar-custom {
+  background: transparent;
+}
+
+.navbar-custom.top-nav-collapse {
+  padding: 0;
+  height: 5.5em;
+  border-bottom: 4px solid #BC345B;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/1/12/Hot_air_balloons_in_leon.jpg) center;
+  margin-bottom: 0;
+}
+
+.intro {
+  padding-top: 7%;
+}
+
+
+/* navbar and etc. settings end */
+
+
+/* Weather Types */
+
+
+/* Rainy Type */
+
+.wi-day-rain {
+  color: lightblue;
+  !important
+}
+
+.isRainy:first-of-type {
+  background: url(http://applehdwallpaper.com/wp-content/uploads/elegant-rain-image-in-hd.jpg);
+}
+
+.isRainy:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/8486/water-rain-raindrops-drops.jpg);
+}
+
+
+/* End Rainy Type */
+
+
+/* Cloud Type */
+
+.partly-cloudy:first-of-type {
+  background: url(http://www.publicdomainpictures.net/pictures/30000/velka/cloudy-day-5.jpg);
+}
+
+.partly-cloudy:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/964/road-mountains-street-cliff.jpg);
+  color: #20494C;
+}
+
+.partly-cloudy .row .temperatures {
+  color: white;
+}
+
+.partly-cloudy .astro .sun-times {
+  color: white;
+}
+
+
+/* Cloudy End */
+
+
+/* Sunny Day*/
+
+.wi-horizon-alt {
+  color: yellow;
+}
+
+.sunny:first-of-type {
+  background: url(http://www.publicdomainpictures.net/pictures/100000/velka/clouds-in-blue-sky-14094113785iy.jpg);
+}
+
+.sunny:nth-of-type(2) {
+  color: white;
+  background: url(https://static.pexels.com/photos/164025/pexels-photo-164025.jpeg) center;
+}
+
+
+/* Sunny End */
+
+
+/* OverCast Setting */
+
+.wi-sprinkle {
+  color: blue;
+}
+
+.overcast:first-of-type {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/a/ac/Landscape_of_lakes_in_the_swamp_windy_overcast_day.jpg) center;
+}
+
+.overcast:nth-of-type(2) {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/3/3a/Overcast_at_the_Attabad_Lake.jpg) center;
+}
+
+
+/* Overcast End */
+
+
+/* Clear Night */
+
+.wi-night-clear,
+.wi-stars {
+  color: yellow;
+}
+
+.clear-night:first-of-type {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg);
+}
+
+.clear-night:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/26171/pexels-photo.jpg) center;
+}
+
+
+/* Clear-Night End */
+
+
+/* Icon Colors */
+
+.wi-thermometer,
+.wi-humidity {
+  color: red;
+}
+
+.wi-wind-direction {
+  color: purple;
+}
+
+.wi-strong-wind {
+  color: lightblue;
+}
+
+.wi-raindrops,
+.wi-flood {
+  color: blue;
+}
+
+
+/* Icon Colors End */
+
+
+/* Fog or Mist Type */
+
+.foggy:first-of-type {
+  background: url(https://static.pexels.com/photos/7919/pexels-photo.jpg);
+}
+
+.foggy:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/8879/pexels-photo.jpeg) center;
+}
+
+
+/* Fog or Mist type end */
+
+
+/* Weather Types End */
+
+
+/* Glyphicon Settings*/
+
+.glyphicon {
+  padding: 1%;
+}
+
+.glyphicon-certificate,
+.glyphicon-flash,
+.glyphicon-star {
+  color: yellow;
+}
+
+.glyphicon-leaf {
+  color: green;
+}
+
+.glyphicon-fire {
+  color: orange;
+}
+
+.glyphicon-tint {
+  color: lightblue;
+}
+
+.glyphicon-globe {
+  color: blue;
+}
+
+a .glyphicon-chevron-down {
+  color: #05706E;
+}
+
+
+/*Glyphicon Settings END
+Header Body CSS
+*/
+
+.introduction-line {
+  line-height: 125%;
+}
+
+.introduction-line a {
+  color: #d5e5e5;
+}
+
+{
+  color: black;
+}
+
+.introduction-line a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  background: url(http://letsgooutside.org/wp-content/uploads/2014/03/Santiago-Oaks_2785.jpg) no-repeat center scroll;
+}
+
+.sub-header {
+  padding-left: 5%;
+}
+
+.scroll-prompt {
+  margin-top: -3%;
+  padding-top: 0;
+}
+
+.introduction-line small,
+.introduction-line small a {
+  color: black;
+}
+
+
+/*Content Section 1 Setting Beginning with API Call Button */
+
+.notClicked {
+  background-color: blue !mportant;
+}
+
+.isClicked {
+  background-color: red !important;
+}
+
+.content-section {
+  background-color: #606163;
+  padding-top: 5%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.title-nav {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 5%;
+  color: white;
+}
+
+.label-info {
+  color: white;
+  font-size: 1.6em;
+  border: black solid 4px;
+  border-radius: 5px;
+}
+
+.api-btn {
+  border: #180328 solid 8px;
+  border-radius: 8px;
+}
+
+.location-load {
+  border: red solid 3px;
+  border-radius: 4px;
+  font-size: 1.6em;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+
+.area-load .center-block {
+  width: 70%;
+}
+
+#forecast-data .row {
+  margin-bottom: 2.8%;
+}
+
+.broadcast {
+  position: relative;
+}
+
+.broadcast li h1 {
+  color: white;
+  line-height: 130%;
+}
+
+
+/* Section 1 Settings END */
+
+
+/* Time Icon Colors */
+
+.wi-day-sunny,
+.wi-moonrise,
+.wi-moonset,
+.wi-sunrise,
+.wi-moon-waxing-crescent-4 {
+  color: yellow !important;
+}
+
+.wi-sunset {
+  color: orange !important;
+}
+
+
+/* End Time Icon Settings */
+
+
+/* Below Is unit measurement stylings */
+
+.isKm {
+  color: #43ADA8;
+}
+
+.isMiles {
+  color: orange;
+}
+
+.inHg {
+  color: orange;
+  title: "Click if you would like to see in 'mb' or millibars";
+}
+
+.inMb {
+  title: "Click if you would like to see pressure in inches of mercury (Hg)";
+  color: #43ADA8;
+}
+
+.isFahrenheit {
+  color: orange;
+}
+
+.isCelsius {
+  color: #43ADA8;
+}
+
+
+/* End Unit Styling */
+
+
+/* Beginning CSS for second content
+section */
+
+.content-details {
+  background-color: #0F7899;
+}
+
+.area-load {
+  line-height: 4.5em;
+}
+
+.dl-horizontal dt {
+  text-align: left !important;
+}
+
+
+/* End Section 2 Stylings */
+
+
+/* Begin Section 3 Stylings */
+
+.content-section:nth-of-type(3) {
+  background: url(http://www.publicdomainpictures.net/pictures/200000/velka/foggy-forest-1477392011sqX.jpg);
+}
+
+#about .row div p {
+  padding: 3%;
+  font-size: 0.9em;
+  background-color: #FFB366;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+.content-section:nth-of-type(3) h2,
+.content-section:nth-of-type(3) .row div h4 {
+  color: orange;
+}
+
+#about .row .col-xs-6:nth-of-type(2) {
+  margin-top: 8em;
+}
+
+address {
+  color: #E6E6E6 font-size: 1.3em;
+  padding: 4%;
+  background-color: lightblue;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+
+/* End Section 3 Stylings */
