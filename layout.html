@@ -1,0 +1,160 @@
+ <!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-left pull-left">
+      <a class="navbar-brand page-scroll pull-left" href="#page-top">
+        <i class="fa fa-play-circle"></i> <span class="light">By</span> CodePenner</a> <a class="navbar-brand page-scroll pull-left" href="https://codepen.io/joshpas4991">JoshPas4991</a>
+    </div>
+    <div class="navbar-header">
+      <h4 class="text-primary text-center title-nav"><strong>So,</strong> how About that Weather<br><span class="glyphicon glyphicon-certificate"></span><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-leaf"></span><span class="glyphicon glyphicon-fire"></span>
+    <span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-map-marker" style="color:red"></span><span class="glyphicon glyphicon-cloud"></span>  <span class="glyphicon glyphicon-globe"></span><span class="glyphicon glyphicon-star"></span></h4>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#forecast-data">General</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#forecast-details">Forecast</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<header class="intro" id="transparency">
+  <div class="intro-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="introduction-line text-left">Welcome to How 'Bout the Weather, <br><span class="sub-header"><small>developed by <a href="https://www.github.com/joshpas64" title="github link">Joshua Pascascio</a></span><br><span class="sub-header"><a href="http://www.ics.uci.edu/">   ICS UCI </a>undergraduate participating in <a href="https://www.freecodecamp.com/map" title="freeCodeCamp Curriculum">freeCodeCamp projects.</a></small></span></h2><br><br>
+          <h2 class="scroll-prompt">Scroll down or press the <br><a href="#forecast-data"><span class="glyphicon glyphicon-chevron-down"></span></a><br> below to get the weather forecasts of your area!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="container-fluid content-section isRainy" id="forecast-data">
+  <div class="row section-labels">
+    <button class="btn btn-primary btn-lg center-block api-btn notClicked">Get Local Weather</button><br>
+    <span class="label label-info center-block">For your area of: </span><br>
+  </div>
+  <div class="row area-load">
+    <span class="label label-default center-block location-load">City or Nearby Street:_________ State: _________ Country_Code: ___________</span>
+    <br><span class="label label-default location-load center-block coordinate-load">Current Coordinates: (Latitude: <span class="lat-load">33.6839</span> &deg<span class="vertical-dir">N</span>, Longitude: <span class="longt-load">117.7934</span> &deg
+    <span class="horizontal-dir">W</span>)</span>
+  </div>
+  <div class="row">
+    <ul class="broadcast" style="list-style-type:none">
+      <li>
+        <h1 class="text-center" id="general"> Overall, today's forecast will be:  <span class="weather-desc">some rain <i class="wi wi-day-rain"></i></span> at a</h1></li>
+      <li>
+        <h1 class="text-center">Current Temperature of: <span class="placeholder-temp">62.49</span> <a title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></h1></li>
+    </ul>
+  </div>
+</section>
+<section class="container-fluid content-section content-details isRainy" id="forecast-details">
+  <div class="row">
+    <div class="col-xs-4 temperatures">
+      <h3 class="text-center">Overall Temperatures <i class="wi wi-thermometer"></i>and Today's Humidity</h3>
+      <dl class="dl-horizontal">
+        <dt>Maximum Temperature: </dt>
+        <dd><span class="placeholder-temp max-temp">66.2</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></dd>
+        <dt>Minimum Temperature: </dt>
+        <dd><span class="placeholder-temp min-temp">59</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit"> &deg F</a></dd>
+        <dt>Average Temperature: </dt>
+        <dd><span class="placeholder-temp">62.49</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></dd>
+        <dt>Humidity for today: <i class="wi wi-humidity"></i></dt>
+        <dd><span class="placeholder-humidity">63</span> <a href="#forecast-details" title="You will be able to see JSON data in another tab here" id="json-link">%</a></dd>
+      </dl>
+    </div>
+    <div class="col-xs-4 json-stringy">
+      <h3 class="text-center">Wind and Air Data<i class="wi wi-strong-wind"></i><i class="wi wi-cloud-refresh"></i></h3>
+      <dl class="dl-horizontal">
+        <dt>Wind Speed: </dt>
+        <dd><span class="wind-speed">1.2</span><a class="speed-convert isMiles" href="#forecast-details" title="Click to convert this to kph"> mph</a></dd>
+        <dt>Wind Direction: <i class="wi wi-wind-direction"></i></dt>
+        <dd> </dd>
+        <dt>Wind Rotation: <i class="wi wi-refresh"></i></dt>
+        <dd> &deg</dd>
+        <dt>Air Pressure: <i class="wi wi-barometer"></i></dt>
+        <dd id="testGlobal"> <span class="pressure-val">30.5</span><a class="pressure-convert inHg" href="#forecast-details" title="Click if you would like to see in 'mb'"> inches Hg</a></dd>
+        <dt id="putJSON">Current Weather: </dt>
+        <dd id="load-json">Weather</dd>
+      </dl>
+    </div>
+    <div class="col-xs-4 precip">
+      <h3 class="text-center">Precipitation Data <i class="wi wi-raindrops"></i></h3>
+      <dl class="dl-horizontal">
+        <dt>Precipitation of: <i class="wi wi-flood"></i></dt>
+        <dd> inches</dd>
+        <dt>Precipitation of: </dt>
+        <dd> millimeters</dd>
+        <dt>'Felt Temperature:' <i class="wi wi-thermometer-exterior"></i></dt>
+        <dd><span class="placeholder-temp feels-temp">62.49</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="row astro">
+    <h3 class="text-center">Sun and Moon Times for Today.</h3>
+    <div class="col-xs-6 sun-times">
+      <h4 class="text-center">Sun <i class="wi wi-day-sunny"></i></h4>
+      <dl class="dl-horizontal">
+        <dt>Sun Rise: <i class="wi wi-sunrise"></i></dt>
+        <dd></dd>
+        <dt>Sun Set: <i class="wi wi-sunset"></i></dt>
+        <dd></dd>
+      </dl>
+    </div>
+    <div class="col-xs-6 moon-times">
+      <h4 class="text-center">Moon <i class="wi wi-moon-waxing-crescent-4"></i></h4>
+      <dl class="dl-horizontal">
+        <dt>Moon Rise: <i class="wi wi-moonrise"></i></dt>
+        <dd></dd>
+        <dt>Moon Set: <i class="wi wi-moonset"></i></dt>
+        <dd></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<section class="container-fluid content-section" id="about">
+  <h2 class="text-primary text-center">About Me: Joshua Alain Pascascio</h2>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4 class="text-info text-center">Some Background Information</h4>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+          <p> I am a UC Irvine transfer student who is in his third, or junior year of studies for a Bachelor's degree in Computer Science. I will say upon transfer I have really fallen in love with coding and doing my own front-end projects and challenges
+            I can find online. My main focus as of now is developing my web and app development skills, both front and back-end. My specializations for my degree are hopefully in networking and Artifical Intelligence but I have much interest in Big Data
+            as well.<br><br> In terms of what I do in my down time, I love anime, A Song of Ice and Fire, manga, and a lot of other nerdy things to death. I enjoy hiking, working out at home, and reading and researching about astronomy and looking at
+            all the gorgeous photos posted NASA's research projects on Reddit. Feel free to contact me anytime. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4 class="text-info text-center">Contacting Me</h4>
+      <div class="row center-block">
+        <div class="col-xs-8 col-xs-offset-2">
+          <address>
+        <strong>Joshua Alain Pascascio</strong><br>
+        Address: 739 Paularino Avenue, Apartment E-101<br>
+        Costa Mesa, California, United States of America<br>
+        Phone: <strong>(562)-484-1866</strong><br>
+        School Email: <strong>jpasasc@uci.edu</strong><br>
+        Main Email: <strong>joshua.pascascio@gmail.com</strong><br>
+        Github: <strong><a href="https://github.com/joshpas64" title="Link to my github" target="_blank">Github User: joshpas64</a></strong>
+      </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
