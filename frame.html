@@ -1,0 +1,867 @@
+
+<!DOCTYPE html><html class=''>
+<head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="http://codepen.io/joshpas4991/pen/wgKQNP" />
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel='stylesheet prefetch' href='https://erikflowers.github.io/weather-icons/css/weather-icons.min.css'><link rel='stylesheet prefetch' href='https://erikflowers.github.io/weather-icons/css/weather-icons-wind.min.css'><link rel='stylesheet prefetch' href='https://blackrockdigital.github.io/startbootstrap-grayscale/css/grayscale.min.css'><link rel='stylesheet prefetch' href='https://blackrockdigital.github.io/startbootstrap-grayscale/vendor/font-awesome/css/font-awesome.min.css'>
+<style class="cp-pen-styles">/* navbar fixed and collapsed settings */
+
+.navbar-custom {
+  background: transparent;
+}
+
+.navbar-custom.top-nav-collapse {
+  padding: 0;
+  height: 5.5em;
+  border-bottom: 4px solid #BC345B;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/1/12/Hot_air_balloons_in_leon.jpg) center;
+  margin-bottom: 0;
+}
+
+.intro {
+  padding-top: 7%;
+}
+
+
+/* navbar and etc. settings end */
+
+
+/* Weather Types */
+
+
+/* Rainy Type */
+
+.wi-day-rain {
+  color: lightblue;
+  !important
+}
+
+.isRainy:first-of-type {
+  background: url(http://applehdwallpaper.com/wp-content/uploads/elegant-rain-image-in-hd.jpg);
+}
+
+.isRainy:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/8486/water-rain-raindrops-drops.jpg);
+}
+
+
+/* End Rainy Type */
+
+
+/* Cloud Type */
+
+.partly-cloudy:first-of-type {
+  background: url(http://www.publicdomainpictures.net/pictures/30000/velka/cloudy-day-5.jpg);
+}
+
+.partly-cloudy:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/964/road-mountains-street-cliff.jpg);
+  color: #20494C;
+}
+
+.partly-cloudy .row .temperatures {
+  color: white;
+}
+
+.partly-cloudy .astro .sun-times {
+  color: white;
+}
+
+
+/* Cloudy End */
+
+
+/* Sunny Day*/
+
+.wi-horizon-alt {
+  color: yellow;
+}
+
+.sunny:first-of-type {
+  background: url(http://www.publicdomainpictures.net/pictures/100000/velka/clouds-in-blue-sky-14094113785iy.jpg);
+}
+
+.sunny:nth-of-type(2) {
+  color: white;
+  background: url(https://static.pexels.com/photos/164025/pexels-photo-164025.jpeg) center;
+}
+
+
+/* Sunny End */
+
+
+/* OverCast Setting */
+
+.wi-sprinkle {
+  color: blue;
+}
+
+.overcast:first-of-type {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/a/ac/Landscape_of_lakes_in_the_swamp_windy_overcast_day.jpg) center;
+}
+
+.overcast:nth-of-type(2) {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/3/3a/Overcast_at_the_Attabad_Lake.jpg) center;
+}
+
+
+/* Overcast End */
+
+
+/* Clear Night */
+
+.wi-night-clear,
+.wi-stars {
+  color: yellow;
+}
+
+.clear-night:first-of-type {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg);
+}
+
+.clear-night:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/26171/pexels-photo.jpg) center;
+}
+
+
+/* Clear-Night End */
+
+
+/* Icon Colors */
+
+.wi-thermometer,
+.wi-humidity {
+  color: red;
+}
+
+.wi-wind-direction {
+  color: purple;
+}
+
+.wi-strong-wind {
+  color: lightblue;
+}
+
+.wi-raindrops,
+.wi-flood {
+  color: blue;
+}
+
+
+/* Icon Colors End */
+
+
+/* Fog or Mist Type */
+
+.foggy:first-of-type {
+  background: url(https://static.pexels.com/photos/7919/pexels-photo.jpg);
+}
+
+.foggy:nth-of-type(2) {
+  background: url(https://static.pexels.com/photos/8879/pexels-photo.jpeg) center;
+}
+
+
+/* Fog or Mist type end */
+
+
+/* Weather Types End */
+
+
+/* Glyphicon Settings*/
+
+.glyphicon {
+  padding: 1%;
+}
+
+.glyphicon-certificate,
+.glyphicon-flash,
+.glyphicon-star {
+  color: yellow;
+}
+
+.glyphicon-leaf {
+  color: green;
+}
+
+.glyphicon-fire {
+  color: orange;
+}
+
+.glyphicon-tint {
+  color: lightblue;
+}
+
+.glyphicon-globe {
+  color: blue;
+}
+
+a .glyphicon-chevron-down {
+  color: #05706E;
+}
+
+
+/*Glyphicon Settings END
+Header Body CSS
+*/
+
+.introduction-line {
+  line-height: 125%;
+}
+
+.introduction-line a {
+  color: #d5e5e5;
+}
+
+{
+  color: black;
+}
+
+.introduction-line a:hover {
+  text-decoration: underline;
+}
+
+.intro {
+  background: url(http://letsgooutside.org/wp-content/uploads/2014/03/Santiago-Oaks_2785.jpg) no-repeat center scroll;
+}
+
+.sub-header {
+  padding-left: 5%;
+}
+
+.scroll-prompt {
+  margin-top: -3%;
+  padding-top: 0;
+}
+
+.introduction-line small,
+.introduction-line small a {
+  color: black;
+}
+
+
+/*Content Section 1 Setting Beginning with API Call Button */
+
+.notClicked {
+  background-color: blue !mportant;
+}
+
+.isClicked {
+  background-color: red !important;
+}
+
+.content-section {
+  background-color: #606163;
+  padding-top: 5%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.title-nav {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 5%;
+  color: white;
+}
+
+.label-info {
+  color: white;
+  font-size: 1.6em;
+  border: black solid 4px;
+  border-radius: 5px;
+}
+
+.api-btn {
+  border: #180328 solid 8px;
+  border-radius: 8px;
+}
+
+.location-load {
+  border: red solid 3px;
+  border-radius: 4px;
+  font-size: 1.6em;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+
+.area-load .center-block {
+  width: 70%;
+}
+
+#forecast-data .row {
+  margin-bottom: 2.8%;
+}
+
+.broadcast {
+  position: relative;
+}
+
+.broadcast li h1 {
+  color: white;
+  line-height: 130%;
+}
+
+
+/* Section 1 Settings END */
+
+
+/* Time Icon Colors */
+
+.wi-day-sunny,
+.wi-moonrise,
+.wi-moonset,
+.wi-sunrise,
+.wi-moon-waxing-crescent-4 {
+  color: yellow !important;
+}
+
+.wi-sunset {
+  color: orange !important;
+}
+
+
+/* End Time Icon Settings */
+
+
+/* Below Is unit measurement stylings */
+
+.isKm {
+  color: #43ADA8;
+}
+
+.isMiles {
+  color: orange;
+}
+
+.inHg {
+  color: orange;
+  title: "Click if you would like to see in 'mb' or millibars";
+}
+
+.inMb {
+  title: "Click if you would like to see pressure in inches of mercury (Hg)";
+  color: #43ADA8;
+}
+
+.isFahrenheit {
+  color: orange;
+}
+
+.isCelsius {
+  color: #43ADA8;
+}
+
+
+/* End Unit Styling */
+
+
+/* Beginning CSS for second content
+section */
+
+.content-details {
+  background-color: #0F7899;
+}
+
+.area-load {
+  line-height: 4.5em;
+}
+
+.dl-horizontal dt {
+  text-align: left !important;
+}
+
+
+/* End Section 2 Stylings */
+
+
+/* Begin Section 3 Stylings */
+
+.content-section:nth-of-type(3) {
+  background: url(http://www.publicdomainpictures.net/pictures/200000/velka/foggy-forest-1477392011sqX.jpg);
+}
+
+#about .row div p {
+  padding: 3%;
+  font-size: 0.9em;
+  background-color: #FFB366;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+.content-section:nth-of-type(3) h2,
+.content-section:nth-of-type(3) .row div h4 {
+  color: orange;
+}
+
+#about .row .col-xs-6:nth-of-type(2) {
+  margin-top: 8em;
+}
+
+address {
+  color: #E6E6E6 font-size: 1.3em;
+  padding: 4%;
+  background-color: lightblue;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+
+/* End Section 3 Stylings */</style></head><body>
+ <!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-left pull-left">
+      <a class="navbar-brand page-scroll pull-left" href="#page-top">
+        <i class="fa fa-play-circle"></i> <span class="light">By</span> CodePenner</a> <a class="navbar-brand page-scroll pull-left" href="https://codepen.io/joshpas4991">JoshPas4991</a>
+    </div>
+    <div class="navbar-header">
+      <h4 class="text-primary text-center title-nav"><strong>So,</strong> how About that Weather<br><span class="glyphicon glyphicon-certificate"></span><span class="glyphicon glyphicon-flash"></span><span class="glyphicon glyphicon-leaf"></span><span class="glyphicon glyphicon-fire"></span>
+    <span class="glyphicon glyphicon-tint"></span><span class="glyphicon glyphicon-map-marker" style="color:red"></span><span class="glyphicon glyphicon-cloud"></span>  <span class="glyphicon glyphicon-globe"></span><span class="glyphicon glyphicon-star"></span></h4>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#forecast-data">General</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#forecast-details">Forecast</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<header class="intro" id="transparency">
+  <div class="intro-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="introduction-line text-left">Welcome to How 'Bout the Weather, <br><span class="sub-header"><small>developed by <a href="https://www.github.com/joshpas64" title="github link">Joshua Pascascio</a></span><br><span class="sub-header"><a href="http://www.ics.uci.edu/">   ICS UCI </a>undergraduate participating in <a href="https://www.freecodecamp.com/map" title="freeCodeCamp Curriculum">freeCodeCamp projects.</a></small></span></h2><br><br>
+          <h2 class="scroll-prompt">Scroll down or press the <br><a href="#forecast-data"><span class="glyphicon glyphicon-chevron-down"></span></a><br> below to get the weather forecasts of your area!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="container-fluid content-section isRainy" id="forecast-data">
+  <div class="row section-labels">
+    <button class="btn btn-primary btn-lg center-block api-btn notClicked">Get Local Weather</button><br>
+    <span class="label label-info center-block">For your area of: </span><br>
+  </div>
+  <div class="row area-load">
+    <span class="label label-default center-block location-load">City or Nearby Street:_________ State: _________ Country_Code: ___________</span>
+    <br><span class="label label-default location-load center-block coordinate-load">Current Coordinates: (Latitude: <span class="lat-load">33.6839</span> &deg<span class="vertical-dir">N</span>, Longitude: <span class="longt-load">117.7934</span> &deg
+    <span class="horizontal-dir">W</span>)</span>
+  </div>
+  <div class="row">
+    <ul class="broadcast" style="list-style-type:none">
+      <li>
+        <h1 class="text-center" id="general"> Overall, today's forecast will be:  <span class="weather-desc">some rain <i class="wi wi-day-rain"></i></span> at a</h1></li>
+      <li>
+        <h1 class="text-center">Current Temperature of: <span class="placeholder-temp">62.49</span> <a title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></h1></li>
+    </ul>
+  </div>
+</section>
+<section class="container-fluid content-section content-details isRainy" id="forecast-details">
+  <div class="row">
+    <div class="col-xs-4 temperatures">
+      <h3 class="text-center">Overall Temperatures <i class="wi wi-thermometer"></i>and Today's Humidity</h3>
+      <dl class="dl-horizontal">
+        <dt>Maximum Temperature: </dt>
+        <dd><span class="placeholder-temp max-temp">66.2</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></dd>
+        <dt>Minimum Temperature: </dt>
+        <dd><span class="placeholder-temp min-temp">59</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit"> &deg F</a></dd>
+        <dt>Average Temperature: </dt>
+        <dd><span class="placeholder-temp">62.49</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></dd>
+        <dt>Humidity for today: <i class="wi wi-humidity"></i></dt>
+        <dd><span class="placeholder-humidity">63</span> <a href="#forecast-details" title="You will be able to see JSON data in another tab here" id="json-link">%</a></dd>
+      </dl>
+    </div>
+    <div class="col-xs-4 json-stringy">
+      <h3 class="text-center">Wind and Air Data<i class="wi wi-strong-wind"></i><i class="wi wi-cloud-refresh"></i></h3>
+      <dl class="dl-horizontal">
+        <dt>Wind Speed: </dt>
+        <dd><span class="wind-speed">1.2</span><a class="speed-convert isMiles" href="#forecast-details" title="Click to convert this to kph"> mph</a></dd>
+        <dt>Wind Direction: <i class="wi wi-wind-direction"></i></dt>
+        <dd> </dd>
+        <dt>Wind Rotation: <i class="wi wi-refresh"></i></dt>
+        <dd> &deg</dd>
+        <dt>Air Pressure: <i class="wi wi-barometer"></i></dt>
+        <dd id="testGlobal"> <span class="pressure-val">30.5</span><a class="pressure-convert inHg" href="#forecast-details" title="Click if you would like to see in 'mb'"> inches Hg</a></dd>
+        <dt id="putJSON">Current Weather: </dt>
+        <dd id="load-json">Weather</dd>
+      </dl>
+    </div>
+    <div class="col-xs-4 precip">
+      <h3 class="text-center">Precipitation Data <i class="wi wi-raindrops"></i></h3>
+      <dl class="dl-horizontal">
+        <dt>Precipitation of: <i class="wi wi-flood"></i></dt>
+        <dd> inches</dd>
+        <dt>Precipitation of: </dt>
+        <dd> millimeters</dd>
+        <dt>'Felt Temperature:' <i class="wi wi-thermometer-exterior"></i></dt>
+        <dd><span class="placeholder-temp feels-temp">62.49</span> <a href="#forecast-details" title="Convert to Celsius" class="switchScale isFahrenheit">&deg F</a></dd>
+      </dl>
+    </div>
+  </div>
+  <div class="row astro">
+    <h3 class="text-center">Sun and Moon Times for Today.</h3>
+    <div class="col-xs-6 sun-times">
+      <h4 class="text-center">Sun <i class="wi wi-day-sunny"></i></h4>
+      <dl class="dl-horizontal">
+        <dt>Sun Rise: <i class="wi wi-sunrise"></i></dt>
+        <dd></dd>
+        <dt>Sun Set: <i class="wi wi-sunset"></i></dt>
+        <dd></dd>
+      </dl>
+    </div>
+    <div class="col-xs-6 moon-times">
+      <h4 class="text-center">Moon <i class="wi wi-moon-waxing-crescent-4"></i></h4>
+      <dl class="dl-horizontal">
+        <dt>Moon Rise: <i class="wi wi-moonrise"></i></dt>
+        <dd></dd>
+        <dt>Moon Set: <i class="wi wi-moonset"></i></dt>
+        <dd></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<section class="container-fluid content-section" id="about">
+  <h2 class="text-primary text-center">About Me: Joshua Alain Pascascio</h2>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4 class="text-info text-center">Some Background Information</h4>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+          <p> I am a UC Irvine transfer student who is in his third, or junior year of studies for a Bachelor's degree in Computer Science. I will say upon transfer I have really fallen in love with coding and doing my own front-end projects and challenges
+            I can find online. My main focus as of now is developing my web and app development skills, both front and back-end. My specializations for my degree are hopefully in networking and Artifical Intelligence but I have much interest in Big Data
+            as well.<br><br> In terms of what I do in my down time, I love anime, A Song of Ice and Fire, manga, and a lot of other nerdy things to death. I enjoy hiking, working out at home, and reading and researching about astronomy and looking at
+            all the gorgeous photos posted NASA's research projects on Reddit. Feel free to contact me anytime. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4 class="text-info text-center">Contacting Me</h4>
+      <div class="row center-block">
+        <div class="col-xs-8 col-xs-offset-2">
+          <address>
+        <strong>Joshua Alain Pascascio</strong><br>
+        Address: 739 Paularino Avenue, Apartment E-101<br>
+        Costa Mesa, California, United States of America<br>
+        Phone: <strong>(562)-484-1866</strong><br>
+        School Email: <strong>jpasasc@uci.edu</strong><br>
+        Main Email: <strong>joshua.pascascio@gmail.com</strong><br>
+        Github: <strong><a href="https://github.com/joshpas64" title="Link to my github" target="_blank">Github User: joshpas64</a></strong>
+      </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script><script src='https://blackrockdigital.github.io/startbootstrap-grayscale/js/grayscale.js'></script>
+<script>var convertTempScale = function(temp, toCelsius) {
+  var result = temp;
+  if (toCelsius) {
+    result -= 32.0;
+    result = result / 1.8;
+  } else {
+    result = result * 1.8;
+    result += 32;
+  }
+  return result;
+};
+
+var convertSpeed = function(speed, toMetric) {
+  var result = speed;
+  if (toMetric) {
+    result = speed * 1.60934;
+  } else {
+    result = speed / 1.60934;
+  }
+  return result;
+};
+
+var convertPressure = function(pressure, toMb) {
+  var newPressure = pressure;
+  if (toMb) {
+    newPressure = pressure * 33.8638864;
+  } else {
+    newPressure = pressure / 33.8638864;
+  }
+  return newPressure;
+};
+
+$(document).ready(function() {
+  var states = ["isRainy", "partly-cloudy", "isSunny", "isMist", "has -overcast"];
+  var currentStateObj = {
+    "currentClass": "isRainy"
+  };
+  var api_base = "https://api.apixu.com/v1/forecast.json?key=c5ea8f0d9cf54e4db0473007171201";
+  var setWeatherLook = function(state, dayStatus) {
+    var newState = currentStateObj.currentClass;
+    var iconString = "<i class='wi wi-";
+    var endingString = "";
+    var statusString = "";
+    if (dayStatus === 0) {
+      iconString += "night";
+      endingString += " for the night.";
+    } else if (dayStatus === 1) {
+      iconString += "day";
+      endingString += " for the day. ";
+    }
+    if (state.toLowerCase().search("rain") !== -1) {
+      var statusString = state + endingString + iconString + "-rain'</i>";
+      $(".weather-desc").html(statusString);
+      $(".content-section").addClass("isRainy");
+      newState = "isRainy";
+    } else if (state.toLowerCase() === "partly cloudy" || state.toLowerCase() === "cloudy" || state.toLowerCase() === "mist") {
+      var statusString = state + endingString + iconString + "-partly-cloudy'</i> ";
+      $(".weather-desc").html(statusString);
+      $(".weather-desc").css({
+        "color": "white"
+      });
+      $(".content-section").addClass("partly-cloudy");
+      newState = "partly-cloudy";
+    } else if (state.toLowerCase() === "overcast") {
+      var statusString = state + endingString + "<i class='wi wi-cloudy'></i><i class='wi wi-sprinkle'></i>";
+      $(".weather-desc").html(statusString);
+      $(".wi-cloudy").attr("color", "gray");
+      $(".content-section").addClass("overcast");
+      newState = "overcast";
+    } else if (state.toLowerCase() === "mist" || state.toLowerCase() === "fog") {
+      var statusString = state + endingString + " <i class='wi wi-fog'></i>";
+      $(".weather-desc").html(statusString);
+      $(".wi-fog").attr("color", "#939496");
+      $(".content-section").addClass("foggy");
+      newState = "foggy";
+    } else if (state.toLowerCase() === "sunny" || state.toLowerCase() === "clear skies") {
+      if (dayStatus === 1) {
+        var statusString = state + endingString + "<i class='wi wi-horizon-alt'></i>";
+        $(".weather-desc").html(statusString);
+        $(".content-section").addClass("sunny");
+        newState = "sunny";
+      } else {
+        var statusString = "Clear skies for the night. " + "<i class='wi wi-stars'></i><i class='wi wi-night-clear'></i>";
+        $(".weather-desc").html(statusString);
+        $(".content-section").addClass("clear-night");
+        newState = "clear-night";
+      }
+
+    }
+    if (newState !== currentStateObj.currentClass) {
+      $(".content-section").removeClass(currentStateObj.currentClass);
+    }
+    currentStateObj.currentClass = newState;
+  };
+  /*
+   var api_key = "&appid=8f4a778f76fb893671edf23fa1d008fe";
+   var api_query_base = "http://api.openweathermap.org/data/2.5/weather?";*/
+  var initialLongitude = -117.7934;
+  var initialLatitude = 33.6839;
+  var checkDir = function(lat, long) {
+    var vertIcon = "S";
+    var horizIcon = "E";
+    if (lat >= 0.0) {
+      vertIcon = "N";
+    }
+    if (vertIcon !== $(".vertical-dir").text()) {
+      $(".vertical-dir").text(vertIcon);
+    }
+    if (long < 0.0) {
+      horizIcon = "W";
+    }
+    if (horizIcon !== $(".horizontal-dir").text()) {
+      $(".horizontal-dir").text(horizIcon);
+    }
+  };
+  var setLocation = function(city, state, country) {
+    $(".area-load").children().eq(0).html("Local Area:    " + city + " State:    " + state + " Country:    " + country);
+  };
+  var setTemperatures = function(current_temperature, avgTemp, minTemp, maxTemp, feelsTemp, humidity, description, time) {
+    $("h1 .placeholder-temp").text(current_temperature);
+    $(".min-temp").text(minTemp);
+    $(".max-temp").text(maxTemp);
+    $(".feels-temp").text(feelsTemp);
+    $("dd .placeholder-temp").eq(2).text(avgTemp);
+    $(".placeholder-humidity").text(humidity);
+    $(".placeholder-temp + .isCelsius").addClass("isFahrenheit");
+    $(".placeholder-temp + .isCelsius").attr("title", "Convert to Celius");
+    $(".placeholder-temp + .isCelsius").html("&deg F");
+    $(".placeholder-temp + .isCelsius").removeClass("isCelsius");
+    setWeatherLook(description, time);
+  };
+
+  var loadWindwPrec = function(speed, direction, rotation, pressure, precipIn, precipmm) {
+    $(".wind-speed").text(speed);
+    $(".speed-convert + .isKm").text(" mph");
+    $(".speed-convert + .isKm").addClass("isMiles");
+    $(".speed-convert + .isKm").removeClass("isKm");
+    var dirString = direction + " <i class='wi wi-wind wi-towards-" + direction.toLowerCase() + "'></i>";
+    $(".wi-wind").css({
+      "color": "purple"
+    });
+    $(".json-stringy .dl-horizontal dd:nth-of-type(2)").html(dirString);
+    $(".json-stringy .dl-horizontal dd:nth-of-type(3)").html(rotation.toString() + " &deg");
+    $(".pressure-val").text(pressure);
+    $(".pressure-val + .inMb").addClass("inHg");
+    $(".pressure-val + .inMb").removeClass("inMb");
+    $(".pressure-val .pressure-convert").text(" inches Hg");
+    $(".precip .dl-horizontal dd:first-of-type").text(precipIn.toString() + " inches");
+    $(".precip .dl-horizontal dd:nth-of-type(2)").text(precipmm.toString() + " millimeters");
+  };
+
+  var loadTimes = function(sunRise, sunSet, moonRise, moonSet) {
+    $(".sun-times .dl-horizontal dd:first-of-type").html("<strong>" + sunRise + "</strong>");
+    $(".sun-times .dl-horizontal dd:nth-of-type(2)").html("<strong>" + sunSet + "</strong>");
+    $(".moon-times .dl-horizontal dd:first-of-type").html("<strong>" + moonRise + "</strong>");
+    $(".moon-times .dl-horizontal dd:nth-of-type(2)").html("<strong>" + moonSet + "</strong>");
+  };
+
+  var getJSONS = function(initialLat, initialLong) {
+    var api_query = api_base + "&q=" + initialLat.toString() + "," + initialLong.toString();
+    $("#json-link").attr({
+      "href": api_query,
+      "target": "_blank",
+      "title": "Click here to see the JSON response in another tab"
+    });
+    $.ajax({
+      url: api_query,
+      success: function(response) {
+        var responseString = JSON.stringify(response);
+        var baseObject = JSON.parse(responseString);
+        $("#putJSON").text(baseObject.location.name);
+        $("#load-json").text(baseObject.current.condition.text);
+        var foreCast = baseObject.forecast.forecastday[0];
+        var astro = baseObject.forecast.forecastday[0].astro;
+        setLocation(baseObject.location.name, baseObject.location.region, baseObject.location.country);
+        setTemperatures(baseObject.current.temp_f, foreCast.day.avgtemp_f, foreCast.day.mintemp_f, foreCast.day.maxtemp_f, baseObject.current.feelslike_f, baseObject.current.humidity, foreCast.day.condition.text, baseObject.current.is_day);
+        loadWindwPrec(baseObject.current.wind_mph, baseObject.current.wind_dir, baseObject.current.wind_degree, baseObject.current.pressure_in, foreCast.day.totalprecip_in, foreCast.day.totalprecip_mm);
+        loadTimes(astro.sunrise, astro.sunset, astro.moonrise, astro.moonset);
+      }
+    });
+  };
+  /*
+  $("#load-json").load(api_query, function(response, status) {
+    if (status === "success") {
+      var baseObject = JSON.parse(response);
+      $("#load-json").text(baseObject.current.condition.text);
+      var foreCast = baseObject.forecast.forecastday[0];
+      setLocation(baseObject.location.name, baseObject.location.region, baseObject.location.country);
+      setTemperatures(baseObject.current.temp_f, foreCast.day.avgtemp_f, foreCast.day.mintemp_f, foreCast.day.maxtemp_f, baseObject.current.feelslike_f, baseObject.current.humidity, foreCast.day.condition.text, baseObject.current.is_day);
+      loadWindwPrec(baseObject.current.wind_mph, baseObject.current.wind_dir, baseObject.current.wind_degree, baseObject.current.pressure_in, foreCast.day.totalprecip_in, foreCast.day.totalprecip_mm);
+
+    } else {
+      alert("Connection Error: Cannot get Weather Forecast.\nPlease Try Again Later");
+    }
+  }); 
+  */
+
+  var testCoords = function() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        initialLongitude = position.coords.longitude;
+        initialLatitude = position.coords.latitude;
+        $(".lat-load").text(Math.abs(initialLatitude).toFixed(2));
+        $(".longt-load").text(Math.abs(initialLongitude).toFixed(2));
+        checkDir(initialLatitude, initialLongitude);
+        getJSONS(initialLatitude, initialLongitude);
+      });
+    }
+  };
+  $(".switchScale").on("click", function() {
+    var currentTemp = Number($(this).prev().text());
+    var convertBool = true;
+    if ($(this).hasClass("isFahrenheit")) {
+      $(this).removeClass("isFahrenheit");
+      $(this).addClass("isCelsius");
+      $(this).attr("title", "Convert to Fahrenheit");
+      $(this).html("&deg C");
+    } else {
+      $(this).removeClass("isCelsius");
+      $(this).addClass("isFahrenheit");
+      $(this).attr("title", "Convert to Celius");
+      $(this).html("&deg F");
+      convertBool = false;
+    }
+    var newTemp = convertTempScale(currentTemp, convertBool);
+    $(this).prev().text(newTemp.toFixed(2));
+
+  });
+  $(".speed-convert").on("click", function() {
+    var currentSpeed = Number($(".wind-speed").text());
+    var newSpeed = currentSpeed;
+    if ($(".speed-convert").hasClass("isMiles")) {
+      newSpeed = convertSpeed(currentSpeed, true);
+      $(".speed-convert").removeClass("isMiles");
+      $(".speed-convert").addClass("isKm");
+      $(".speed-convert").text(" kph");
+      $(".speed-convert").attr("title", "Click to convert this to mph");
+    } else {
+      newSpeed = convertSpeed(currentSpeed, false);
+      $(".speed-convert").addClass("isMiles");
+      $(".speed-convert").removeClass("isKm");
+      $(".speed-convert").text(" mph");
+      $(".speed-convert").attr("title", "Click to convert this to kph");
+    }
+    $(".wind-speed").text(newSpeed.toFixed(2));
+  });
+  $(".pressure-convert").on("click", function() {
+    var bool = true;
+    var currentPressure = Number($(this).prev().text())
+    if ($(this).hasClass("inHg")) {
+      $(this).addClass("inMb");
+      $(this).removeClass("inHg");
+      $(this).text(" millibars");
+    } else {
+      bool = false;
+      $(this).addClass("inHg");
+      $(this).removeClass("inMb");
+      $(this).text(" inches Hg");
+    }
+    var newPressure = convertPressure(currentPressure, bool);
+    $(this).prev().text(newPressure.toFixed(2));
+  });
+  $(".api-btn").on("click", function() {
+    if ($(this).hasClass("notClicked")) {
+      $(this).addClass("isClicked");
+      $(this).removeClass("notClicked");
+    } else {
+      $(this).addClass("notClicked");
+      $(this).removeClass("isClicked");
+    }
+    testCoords();
+  });
+  /*
+  var offset = $(".label-info").css("left");
+  offset = offset.replace("px", "");
+  var offsetNumber = Number(offset);
+  offsetNumber += 16;
+  var coordOffset = offsetNumber + 18;
+  offset = offsetNumber.toString() + "px";
+  */
+  var btnWidth = $(".api-btn").css("width");
+  $(".label-info").css({
+    "max-width": btnWidth
+  });
+});
+/*
+coordOffset = (coordOffset).toString() + "px";
+$(".coordinate-load").css({
+  "left": coordOffset
+});
+*/
+//# sourceURL=pen.js
+</script>
+</body></html>
