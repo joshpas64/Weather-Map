@@ -1,0 +1,91 @@
+body {
+  background: url(http://www.henselphelps.com/images/uploads/hero/SC_4004047_University_of_California_Irvine_Medical_Center_001_LG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-right {
+  width: 30%;
+}
+
+.navbar-right .navbar-brand {
+  display: inline-block;
+}
+
+.main-block {
+  position: absolute;
+  top: 150%;
+  margin: auto;
+  color: white;
+  border-radius: 1em;
+  width: 35%;
+  background: none;
+  left: 32.5%;
+}
+
+.navbar-brand {
+  margin-right: 10%;
+  margin-left: 10%;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: lightblue;
+}
+
+.fa-heartbeat {
+  color: pink;
+}
+
+.col-md-3:first-child(1) {
+  margin-top: 0.25em;
+  margin-left: 5%;
+  margin-right: 0;
+  font-size: 1.5em;
+}
+
+.col-md-3:nth-child(2) {
+  margin-top: 0.5%;
+  margin-left: 25%;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.down-btn a {
+  color: white;
+}
+
+.sponsor-header {
+  color: #F2F298;
+  font-weight: bold;
+}
+
+.down-btn,
+.down-btn:hover {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  right: 27%;
+  font-size: 3em;
+  border-style: hidden;
+  background: none;
+}
+
+.uci-logo {
+  width: 2.5em;
+  height: 2.5em;
+  margin-bottom: 1%;
+  border-radius: 2em;
+}
+
+.logo-header {
+  font-size: 1.1em;
+}
+
+.it-logo {
+  opacity: 0.6;
+}
+
+.down-btn a:hover {
+  color: #F7E583;
+}
